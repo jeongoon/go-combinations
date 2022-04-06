@@ -71,7 +71,7 @@ func combinations_index( M int, N int ) [][]int {
 func all_combinations_index( M int ) {
 	var all_combis [][]int
 
-	for n = 0; n < M; i++ {
+	for n := 0; n < M; i++ {
 		for _, cb := range combinations_index( M, n ) {
 			all_combis = append(all_combis, cb)
 		}
