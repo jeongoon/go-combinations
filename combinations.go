@@ -4,7 +4,7 @@ package combinations
  * the method is called "no crossed finger".
  * I will update the explanation after uploading perl version.
  */
-func combinations_index( M int, N int ) [][]int {
+func SomeIndexes( M int, N int ) [][]int {
 	// M: number of selection ( 0 ... (M-1) )
 	// N: number of choice
 	if M < N {
@@ -68,11 +68,11 @@ func combinations_index( M int, N int ) [][]int {
 	return combis
 }
 
-func all_combinations_index( M int ) {
+func AllIndexes( M int ) [][] int {
 	var all_combis [][]int
 
-	for n := 0; n < M; i++ {
-		for _, cb := range combinations_index( M, n ) {
+	for n := 1; n <= M; n++ {
+		for _, cb := range SomeIndexes( M, n ) {
 			all_combis = append(all_combis, cb)
 		}
 	}
